@@ -1,7 +1,7 @@
 <script>
   
 // var input_str = "Ac11B2c3";
- var input_str = "6c5gt6h";
+ var input_str = "i2f4gg7";
 
 len = input_str.length;
 var result_ste = '';
@@ -17,7 +17,7 @@ for(i = 0; i < len; i++){
   if(ascii_val >= 97 && ascii_val <= 122){
     txt_Cur+=each_char;
     num_Cur='';
-    
+    txt_flag=true
   }else if(ascii_val >= 48 && ascii_val <= 57){
     num_Cur+=each_char;
     txt_Cur='';
@@ -25,10 +25,13 @@ for(i = 0; i < len; i++){
   }
   
   if(num_flag){
-    console.log(txt_Cur);  
+    console.log(num_Cur);  
   }
   if(txt_flag){
-    console.log(num_Cur);
-  }  
+    console.log(txt_Cur);
+  }
+  
+  
 }
+
 </script>
